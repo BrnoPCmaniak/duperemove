@@ -1,9 +1,9 @@
 Name:    duperemove
-Version: 0.10
-Release: 1%{?dist}
+Version: 0.11
+Release: 0.4.1.beta4%{?dist}
 Summary: Simple tool for finding duplicated extents and submitting them for deduplication
 URL:     https://github.com/markfasheh/duperemove
-Source0: https://github.com/markfasheh/duperemove/archive/v0.10.tar.gz
+Source0: https://github.com/markfasheh/duperemove/archive/v0.11.beta4.tar.gz
 License: GPLv2
 
 BuildRequires: glib2-devel
@@ -20,7 +20,7 @@ and categorizing blocks that match each other. Duperemove can submit
 those extents for deduplication using the Linux kernel extent-same ioctl.
 
 %prep
-%autosetup -n duperemove-0.10
+%autosetup -n duperemove-0.11.beta4
 
 %build
 %make_build
